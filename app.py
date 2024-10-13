@@ -25,6 +25,7 @@ app = Flask(__name__)
 
 # Sets an environment variable GOOGLE_API_KEY with a specified API key.
 os.environ["GOOGLE_API_KEY"] = "AIzaSyAW5sMrTKYwyystY2A9kbyZQ9PlwjI02C0"; 
+os.environ["PORT"] = 8080
 
 # Defines a route for the home page (/) that sends the index.html file from the web directory.
 @app.route('/')
@@ -77,4 +78,4 @@ def serve_static(path):
 
 # If the script is run directly, it starts the Flask app in debug mode.
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=8080)
+    app.run(debug=True, host="0.0.0.0", port=os.environ["PORT"])
