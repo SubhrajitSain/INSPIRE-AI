@@ -10,7 +10,7 @@ import os
 # send_file: Sends files to the client.
 # send_from_directory: Sends files from a specified directory.
 
-from flask import Flask, jsonify, request, send_file, send_from_directory
+from flask import Flask, jsonify, request, send_file, send_from_directory, session
 
 # HumanMessage from langchain_core.messages: Represents a message from a human user.
 # ChatGoogleGenerativeAI from langchain_google_genai: Provides a chat interface for Google's generative AI.
@@ -25,7 +25,6 @@ app = Flask(__name__)
 
 # Sets an environment variable GOOGLE_API_KEY with a specified API key.
 os.environ["GOOGLE_API_KEY"] = "AIzaSyAW5sMrTKYwyystY2A9kbyZQ9PlwjI02C0"; 
-os.environ[PORT] = 8080
 
 # Defines a route for the home page (/) that sends the index.html file from the web directory.
 @app.route('/')
@@ -78,4 +77,4 @@ def serve_static(path):
 
 # If the script is run directly, it starts the Flask app in debug mode.
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=os.environ[PORT])
+    app.run(debug=True, host="0.0.0.0", port=8080)
