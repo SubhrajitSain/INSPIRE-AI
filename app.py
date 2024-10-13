@@ -77,4 +77,4 @@ def serve_static(path):
 
 # If the script is run directly, it starts the Flask app in debug mode.
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=8080)
