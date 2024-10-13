@@ -3,7 +3,7 @@
 
 import json
 import os
-AIzaSyAW5sMrTKYwyystY2A9kbyZQ9PlwjI02C0
+
 # Flask: Creates the Flask web application.
 # jsonify: Converts data to JSON format for responses.
 # request: Accesses incoming request data.
