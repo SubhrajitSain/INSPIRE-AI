@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('/static/permanent-marker.ttf') format('truetype');
+}
+
+/* Basic styles */
+body {
+  font-family: 'Permanent Marker', sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Header */
+header {
+  background-color: #000080; /* Set a background color */
+  color: #fff; /* Set text color to white */
+  text-align: center; /* Center the content */
+  padding: 20px 0; /* Add some padding */
+}
+
+h1 {
+  font-size: 2em; /* Set a larger font size for the heading */
+  margin: 0; /* Remove default margin */
+}
+
+/* Form */
+form {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: center; /* Center the form elements */
+  margin: 20px 0; /* Add some margin */
+}
+
+.prompt-box {
+  background-color: #eee; /* Set a background color for the prompt box */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  display: flex; /* Arrange label and button horizontally */
+  align-items: center; /* Align content vertically */
+}
+
+label {
+  flex: 1; /* Make the label take up most of the space */
+  margin-right: 10px; /* Add spacing between label and button */
+}
+
+input[type="text"] {
+  width: 100%; /* Make the input field fill the available space */
+  border: 1px solid #ccc; /* Add a border */
+  padding: 5px; /* Add padding */
+  font-size: 1em; /* Set a font size */
+}
+
+button {
+  background-color: #000080; /* Set a blue background color */
+  color: #fff; /* Set text color to white */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Output */
+.output {
+  text-align: justify; /* Center the output text */
+  margin-top: 20px; /* Add some margin */
+  margin-left: 5px;
+  margin-right: 5px;
+}
